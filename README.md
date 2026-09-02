@@ -30,7 +30,7 @@ Analyze traffic, campaigns, transactions, and product data to help the marketing
 
 Five tables: `campaigns`, `customers`, `events` (2M+ rows), `products`, `transactions` (100K+ rows).
 
-**A note on the dataset's limits:** there's no campaign cost or budget data here, so this analysis doesn't calculate ROI or claim which campaign is most profitable. `expected_uplift` is only a target percentage, not an absolute revenue target, and there's no baseline revenue from before each campaign ran — so campaigns are compared by rank against each other, not by actual uplift.
+**A note on the dataset's limits:** there's no campaign cost or budget data here, so this analysis doesn't calculate ROI or claim which campaign is most profitable. `expected_uplift` is only a target percentage, not an absolute revenue target, and there's no baseline revenue from before each campaign ran so campaigns are compared by rank against each other, not by actual uplift.
 
 ## Tools and Concepts Used
 
@@ -59,7 +59,7 @@ My first instinct was to check whether one channel was driving more abandonment 
 Electronics accounts for 41.2% of total revenue. Grocery has the lowest revenue per unit at Rp15.58, compared to Rp125.38 for Electronics. There's no cost data here, so I can't say anything about margin — but Grocery is worth a second look in terms of pricing, bundling, or its role in the overall product strategy.
 
 **Organic brings the most traffic and converts the worst.**
-Organic generated about 430K of the 1.04M total views — the largest volume of any channel — but converted at just 3.9%, well behind Email (17.7%), Paid Search (16.7%), and Social (14.3%). More traffic doesn't automatically mean a channel is working. Organic probably doesn't need more volume; it needs its traffic quality, keywords, landing pages, and post-click experience checked first.
+Organic generated about 430K of the 1.04M total views the largest volume of any channel — but converted at just 3.9%, well behind Email (17.7%), Paid Search (16.7%), and Social (14.3%). More traffic doesn't automatically mean a channel is working. Organic probably doesn't need more volume; it needs its traffic quality, keywords, landing pages, and post-click experience checked first.
 
 **A handful of campaigns need a closer look.**
 Of the 50 campaigns evaluated, most tracked reasonably close to their expected-uplift ranking. Nine fell well below what was expected based on the rank comparison, and five beat it. Affiliate came up most consistently among the campaigns that outperformed their target.
